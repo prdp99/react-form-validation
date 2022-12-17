@@ -86,14 +86,16 @@ const NestedSelectInput = ({ options, sectors, setSectors }) => {
       </div>
       <div className="sectors">
         <div>Selected:</div>
-        {sectors.map((sector) => (
-          <div className="tags" key={sector}>
-            <div>{sector}</div>{" "}
-            <div className="remove-btn">
-              <button onClick={() => handleRemove(sector)}>X</button>
+        <div className="sectors-wrapper">
+          {sectors.map((sector) => (
+            <div className="tags" key={sector}>
+              <div>{sector}</div>{" "}
+              <div className="remove-btn">
+                <button onClick={() => handleRemove(sector)}>X</button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

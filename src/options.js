@@ -60,7 +60,7 @@ const options = [
             label: "Data processing, Web portals, E-marketing",
           },
           {
-            value: "sfotware hardware",
+            value: "software hardware",
             label: "Software, Hardware",
           },
           {
