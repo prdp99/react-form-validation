@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://ak.picdn.net/shutterstock/videos/1051672597/thumb/1.jpg");
+  height: 100vh;
+  width: 100vw;
+  min-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.container {
+  padding: 3rem 4rem;
+  margin: 0;
+  background-color: hsl(201, 100%, 6%, 0.5);
+
+  border: 1px solid hsl(201, 94%, 13%);
+  box-shadow: 2px 2px 5px hsl(201, 100%, 6%, 0.5),
+    -2px 2px 5px hsl(201, 100%, 6%, 0.5);
+  border-radius: 5px;
+  backdrop-filter: blur(1.5px);
+  max-width: 28rem;
+}
+
+.header {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.1rem;
+  margin-left: -1.4rem;
+  padding: 0px;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.8em;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+label {
+  color: white;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-bottom: 0.6rem;
+  font-weight: lighter;
+}
+input {
+  background-color: hsl(201, 100%, 91%, 0.3);
+  border: 1px solid hsl(201, 62%, 43%);
+  padding: 0.99rem;
+  color: white;
+  outline: none;
+  border-radius: 0.4rem;
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
+input:focus {
+  text-shadow: 5px 5px 5px rgb(99, 99, 141);
+  box-shadow: 5px 5px 5px rgb(70, 70, 15);
+  backdrop-filter: blur(2.5px);
+}
+input:hover {
+  text-shadow: 5px 5px 5px rgb(99, 99, 141);
+  box-shadow: 5px 5px 5px rgb(70, 70, 15);
+  backdrop-filter: blur(1.5px);
+}
+.submit-btn {
+  background-color: rgba(7, 16, 20, 0.5);
+  color: white;
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid hsl(201, 62%, 43%);
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: rgba(7, 16, 20, 0.7);
+  text-shadow: 2px 2px 5px rgb(99, 99, 141);
+  box-shadow: 2px 2px 3px rgb(72, 92, 204), -2px -2px 5px rgb(72, 92, 204);
+}
+
+.success {
+  color: green;
+  padding: 1rem;
+  height: 3em;
+  font-size: 1.2rem;
+  margin-top: -2rem;
+  text-align: center;
+}
+.sectors {
+  color: white;
+  padding-top: 1.2rem;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 1.4rem;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.sectors p {
+  color: white;
+  background-color: transparent;
+  max-height: fit-content;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remove-btn {
+  max-height: 1rem;
+}
+.tags {
+  border-radius: 1rem;
+  padding: 0.5rem 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+  text-align: center;
+  flex-direction: row;
+  max-width: 100%;
+  background-color: black;
+}
+.sectors button {
+  border: none;
+  background-color: rgb(231, 237, 237);
+  border-radius: 50%;
+  width: 1rem;
+  margin-left: 0.2rem;
+  cursor: pointer;
+}
+.select-container {
+  max-height: 9rem;
+  overflow-y: scroll;
+}
+
+.select {
+  /* background-color: black; */
+  /* background-color: hsl(201, 100%, 91%, 0.3); */
+  border: 1px solid hsl(201, 62%, 43%);
+  padding: 15px;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+.err {
+  color: rgb(222, 37, 37);
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
+  height: 1rem;
+}
+.parent {
+  list-style: none;
+  height: auto;
+  color: white;
+  cursor: pointer;
+  padding-top: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  text-align: center;
+}
+.child {
+  color: white;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  /* width: max-content; */
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.option {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.child:hover,
+.option:hover,
+.parent:hover {
+  backdrop-filter: blur(1.5px);
+}
